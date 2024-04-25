@@ -1,11 +1,8 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 
 function ProductDetailsPage() {
   return (
     <div>
-      <Header />
       <div className="container mt-3">
         <div className="row">
           <div className="col-md-6">
@@ -20,7 +17,6 @@ function ProductDetailsPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

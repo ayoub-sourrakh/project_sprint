@@ -1,33 +1,32 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
-function Slider() {
-    return (
-        <Carousel>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="/path-to-your-image.jpg"
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="/path-to-your-image.jpg"
-                    alt="Second slide"
-                />
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
-    );
-}
+const Slider = () => (
+  <Carousel pause="hover" className="bg-dark">
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src="promo1.jpg"  // Chemin vers l'image de la promo
+        alt="First promo"
+      />
+      <Carousel.Caption>
+        <h3>Première promotion</h3>
+        <p>Découvrez nos nouvelles offres exclusives !</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src="new1.jpg"  // Chemin vers l'image d'un nouveau produit
+        alt="New arrival"
+      />
+      <Carousel.Caption>
+        <h3>Nouveauté : Collier en diamant</h3>
+        <p>Élégance et raffinement dans chaque détail.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    {/* Ajoutez d'autres Carousel.Item selon les besoins */}
+  </Carousel>
+);
 
 export default Slider;

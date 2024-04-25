@@ -7,3 +7,6 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Product.create(name: "Collier en or", description: "Un beau collier en or 24 carats.", price: 75.99)
+Product.create(name: "Montre élégante", description: "Montre suisse de haute précision.", price: 349.50)
+Product.create(name: "Bracelet en cuir", description: "Bracelet en cuir véritable avec des ornements.", price: 45.00)

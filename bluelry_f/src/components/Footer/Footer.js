@@ -1,13 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
-function Footer() {
-    return (
-        <footer className="bg-light text-center text-lg-start">
-            <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                © 2023 BlueLry: All rights reserved.
-            </div>
-        </footer>
-    );
-}
+const Footer = () => (
+  <footer className="footer mt-auto py-3 bg-dark">
+    <Container className="text-center">
+      <span className="text-light">© 2024 BlueLry: Tous droits réservés.</span>
+    </Container>
+  </footer>
+);
 
 export default Footer;

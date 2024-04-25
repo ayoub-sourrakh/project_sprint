@@ -1,21 +1,19 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 import Slider from '../components/Slider/Slider';
-import ProductList from '../components/ProductList/ProductList';
+import FeaturedProducts from '../components/FeaturedProducts/FeaturedProducts';
+import ProductsByCategory from '../components/ProductsByCategory/ProductsByCategory';
+import { Container } from 'react-bootstrap';
 
-function HomePage() {
+const HomePage = () => {
   return (
     <div>
-      <Header />
       <Slider />
-      <div className="container mt-3">
-        <h2>Produits Phares</h2>
-        <ProductList />
-      </div>
-      <Footer />
+      <Container>
+        <FeaturedProducts />
+        <ProductsByCategory />
+      </Container>
     </div>
   );
-}
+};
 
 export default HomePage;
