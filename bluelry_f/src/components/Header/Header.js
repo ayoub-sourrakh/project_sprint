@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Logo from '../Logo/Logo';
 
 const Header = () => {
   const logoUrl = 's3://asourrakhbucket/logo_bluelry_transp.png';
