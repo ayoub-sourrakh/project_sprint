@@ -9,7 +9,6 @@ Rails.application.routes.draw do
 
   get '/api', to: 'api#index'
 
-  post 'api/register', to: 'users#create'
   post '/api/register', to: 'users#create'
 
   
