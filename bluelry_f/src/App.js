@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'; // Assurez-vous que le chemin d
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header/Header';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     <Route path="/product/:id" element={<ProductDetailsPage />} />
                     <Route path="/cart" element={<ShoppingCartPage />} />
                     <Route path="/login" element={<LoginPage />} />
+                    <Route path="/register" element={<RegisterPage />} />
                 </Routes>
                 <Footer />
             </div>

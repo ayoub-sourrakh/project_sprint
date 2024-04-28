@@ -14,6 +14,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/catalogue">Catalogue</Nav.Link>
             <Nav.Link as={Link} to="/cart">Panier</Nav.Link>
             <Nav.Link as={Link} to="/login">Connexion</Nav.Link>
+            <Nav.Link as={Link} to="/register">Inscription</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <FormControl type="text" placeholder="Rechercher" className="mr-sm-2" />
