@@ -17,10 +17,6 @@ const Header = () => {
             <Nav.Link as={Link} to="/login">Connexion</Nav.Link>
             <Nav.Link as={Link} to="/register">Inscription</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <FormControl type="text" placeholder="Rechercher" className="mr-sm-2" />
-            <Button variant="outline-success">Rechercher</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
