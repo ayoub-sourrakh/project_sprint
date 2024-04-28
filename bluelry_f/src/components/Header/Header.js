@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 
 const Header = () => {
-  const logoUrl = 'https://asourrakhbucket.s3.eu-west-3.amazonaws.com/logo_bluelry_transp.png';
+  const logoUrl = 'src\assets\imgs\logo_bluelry_transp.png';
   const altText = 'logo_bluelry';
 
   return (
