@@ -1,31 +1,28 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import slider_image1 from '../../assets/imgs/pexels-godisable-jacob-226636-1191531.jpg'
+import slider_image2 from '../../assets/imgs/pexels-khairulonggon-908184.jpg'
 
 const Slider = () => (
   <Carousel pause="hover" className="bg-dark">
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="promo1.jpg"  // Chemin vers l'image de la promo
+        src={slider_image1}
         alt="First promo"
       />
       <Carousel.Caption>
-        <h3>Première promotion</h3>
-        <p>Découvrez nos nouvelles offres exclusives !</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <img
+    <img
         className="d-block w-100"
-        src="new1.jpg"  // Chemin vers l'image d'un nouveau produit
-        alt="New arrival"
+        src={slider_image2}
+        alt="Second promo"
       />
       <Carousel.Caption>
-        <h3>Nouveauté : Collier en diamant</h3>
-        <p>Élégance et raffinement dans chaque détail.</p>
       </Carousel.Caption>
     </Carousel.Item>
-    {/* Ajoutez d'autres Carousel.Item selon les besoins */}
   </Carousel>
 );
 
