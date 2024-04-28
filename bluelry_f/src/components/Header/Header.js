@@ -4,13 +4,11 @@ import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 
 const Header = () => {
-  const logoUrl = 'src\assets\imgs\logo_bluelry_transp.png';
-  const altText = 'logo_bluelry';
 
   return (
     <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
       <Container>
-        <Navbar.Brand as={Link} to="/"><Logo src={logoUrl} alt={altText} /></Navbar.Brand>
+        <Navbar.Brand as={Link} to="/"><Logo /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
