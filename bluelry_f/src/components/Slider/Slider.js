@@ -10,6 +10,7 @@ const Slider = () => (
         className="d-block w-100"
         src={slider_image1}
         alt="First promo"
+        style={{ height: '30vh' }}
       />
       <Carousel.Caption>
       </Carousel.Caption>
@@ -19,6 +20,7 @@ const Slider = () => (
         className="d-block w-100"
         src={slider_image2}
         alt="Second promo"
+        style={{ height: '30vh' }}
       />
       <Carousel.Caption>
       </Carousel.Caption>
