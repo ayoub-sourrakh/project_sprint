@@ -5,7 +5,7 @@ import CataloguePage from './pages/CataloguePage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import ShoppingCartPage from './pages/ShoppingCartPage';
 import LoginPage from './pages/LoginPage';
-import Footer from './components/Footer/Footer'; // Assurez-vous que le chemin d'importation est correct
+import Footer from './components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header/Header';

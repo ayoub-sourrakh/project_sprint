@@ -2,6 +2,10 @@ import React from 'react';
 import { Container, Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
+import catalogue from '../../assets/imgs/catalogue.png';
+import panier from '../../assets/imgs/panier.png';
+import connexion from '../../assets/imgs/connexion.png';
+import inscription from '../../assets/imgs/inscription.png';
 
 const Header = () => {
 
@@ -12,10 +16,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/catalogue">Catalogue</Nav.Link>
-            <Nav.Link as={Link} to="/cart">Panier</Nav.Link>
-            <Nav.Link as={Link} to="/login">Connexion</Nav.Link>
-            <Nav.Link as={Link} to="/register">Inscription</Nav.Link>
+            <Nav.Link as={Link} to="/catalogue"><img src={catalogue} alt='logo_bluelry' style={{ maxWidth: '100%', maxHeight: '100%' }} /></Nav.Link>
+            <Nav.Link as={Link} to="/cart"><img src={panier} alt='logo_bluelry' style={{ maxWidth: '100%', maxHeight: '100%' }} /></Nav.Link>
+            <Nav.Link as={Link} to="/login"><img src={connexion} alt='logo_bluelry' style={{ maxWidth: '100%', maxHeight: '100%' }} /></Nav.Link>
+            <Nav.Link as={Link} to="/register"><img src={inscription} alt='logo_bluelry' style={{ maxWidth: '100%', maxHeight: '100%' }} /></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
