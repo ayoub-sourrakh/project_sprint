@@ -13,13 +13,13 @@ ENV RAILS_ENV="production" \
     BUNDLE_PATH="/usr/local/bundle" \
     BUNDLE_WITHOUT="development"
 
-
 # Throw-away build stage to reduce size of final image
 FROM base as build
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential git libvips pkg-config
+    apt-get install --no-install-recommends -y build-essential git libvips pkg-config \
+    default-libmysqlclient-dev libmariadb-dev libmariadb-dev-compat
 
 # Install application gems
 COPY Gemfile Gemfile.lock ./
@@ -32,7 +32,6 @@ COPY . .
 
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
-
 
 # Final stage for app image
 FROM base
